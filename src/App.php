@@ -1,8 +1,8 @@
 <?php
 
-namespace MilesChou\Template;
+namespace LaravelBridge\Yii;
 
-class Sample
+class App
 {
     public function alwaysTrue()
     {
