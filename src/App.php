@@ -2,10 +2,8 @@
 
 namespace LaravelBridge\Yii;
 
-class App
+use CWebApplication;
+
+class App extends CWebApplication
 {
-    public function alwaysTrue()
-    {
-        return true;
-    }
 }

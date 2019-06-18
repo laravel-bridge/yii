@@ -1,7 +1,8 @@
 <?php
 
-namespace Tests;
+namespace Tests\Yii;
 
+use CWebApplication;
 use LaravelBridge\Yii\App;
 use PHPUnit\Framework\TestCase;
 
@@ -9,6 +10,6 @@ class AppTest extends TestCase
 {
     public function testSample()
     {
-        $this->assertTrue((new App())->alwaysTrue());
+        $this->assertInstanceOf(CWebApplication::class, new App(['basePath' => __DIR__]));
     }
 }
